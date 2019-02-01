@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Telstra Poc </string>
+    <string name="errorString">Please try again!</string>
+</resources>

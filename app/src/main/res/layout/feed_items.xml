@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="2dp"
+    app:contentPadding="0dp">
+
+    <RelativeLayout
+        android:id="@+id/feed_relative"
+        android:background="@drawable/view_gradient"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/feed_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textColor="@color/blue"
+            tools:text="Use a Github repository to manage the source code. A clear Git history showing your process is required." />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/feed_title"
+            android:gravity="center_vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/feed_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/feed_item_image"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/black"
+                tools:text="Commit your changes to git in small chunks with meaningful comments." />
+
+            <ImageView
+                android:id="@+id/feed_item_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="0dp" />
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
