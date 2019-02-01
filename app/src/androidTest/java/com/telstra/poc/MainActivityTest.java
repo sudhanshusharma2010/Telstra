@@ -64,7 +64,7 @@ public class MainActivityTest {
         imageView.check(matches(isDisplayed()));
 
         ViewInteraction textView2 = onView(
-                allOf(withId(R.id.feed_desc_text), withText("Beavers are second only to humans in their ability to manipulate and change their environment. They can measure up to 1.3 metres long. A group of beavers is called a colony"),
+                allOf(withId(R.id.feed_desc), withText("Beavers are second only to humans in their ability to manipulate and change their environment. They can measure up to 1.3 metres long. A group of beavers is called a colony"),
                         childAtPosition(
                                 childAtPosition(
                                         withId(R.id.feed_relative),

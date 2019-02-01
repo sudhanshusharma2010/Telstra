@@ -53,6 +53,7 @@ public class FeedsRecyclerViewAdapter extends RecyclerView.Adapter<FeedsViewHold
     }
 
     public void addAll(List<Row> list) {
+        rowData.clear(); // pull to refresh duplicate data issue fix
         rowData.addAll(list);
         notifyDataSetChanged();
     }
